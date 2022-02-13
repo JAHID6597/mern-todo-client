@@ -40,7 +40,7 @@ const ToDoList = () => {
         if (searchValue)
           dispatch({
             type: 'UPDATE_LIST',
-            payload: data.filter((item) => item.text.startsWith(searchValue)),
+            payload: data.filter((item) => ((item.text).toLowerCase()).startsWith(searchValue.toLowerCase())),
           });
         else dispatch({ type: 'UPDATE_LIST', payload: data });
       });
