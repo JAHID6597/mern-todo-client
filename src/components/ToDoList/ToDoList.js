@@ -5,7 +5,7 @@ import ListItems from './ListItems';
 import './toDoList.css';
 import toDoListReducer from './toDoListReducer';
 
-const BASE_ENDPOINT = 'http://localhost:5000';
+const BASE_ENDPOINT = 'https://mern-to-do-list-app.herokuapp.com';
 
 const initialLists = {
   items: [],
